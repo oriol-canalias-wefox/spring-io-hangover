@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  database:
+    image: postgres
+    environment:
+      - POSTGRES_USER=myuser
+      - POSTGRES_PASSWORD=mysecret
+      - POSTGRES_DB=springio
+    ports:
+      - "5499:5432"
+
